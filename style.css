@@ -1,0 +1,115 @@
+body {
+margin:0;
+  /* font: 10px sans-serif; */
+  }
+*{
+  box-sizing: border-box;
+
+
+  font-family: 'Roboto', sans-serif;
+
+
+}  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+  
+  .label-text{
+    font-size: 13px;
+    /* padding: 8px; */
+  }
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
+  .line-hov:hover, .label-text:hover{
+    cursor:pointer;
+  }
+
+  .left-bar{
+    position: fixed;
+    left:0;
+    width: 350px;
+    height: 100%;
+    padding: 15px;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.4);
+    background: whitesmoke;
+  }
+  .left-bar > form > span {
+    width: 100%;
+    display: block;
+height: 5vh;
+  }
+  #chart{
+    width: calc(100% - 150px);
+    position: fixed;
+    left:270px;
+    top:0;
+  }
+
+  #saved > *{
+    cursor: pointer;
+    color:rgba(0,0,0,.7);
+  }
+
+
+
+
+.multiselect-native-select {
+  /* margin: 20px; */
+  display: block;
+  width: 260px;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+.multiselect.dropdown-toggle.btn.btn-default {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.multiselect-container.dropdown-menu {
+  max-height: 550px;
+  overflow: scroll;
+}
+
+.multiselect-container.dropdown-menu{
+  max-width:750px;
+  min-width:250px;
+}
+
+/* .multiselect-container.dropdown-menu li {
+  margin-bottom: 6px;
+} */
+
+
+.multiselect.dropdown-toggle.btn.btn-default {
+  text-align: left;
+}
+
+
+.dropdown-toggle::after {
+  right: 12px;
+  left: auto;
+  position: absolute;
+  top: 16px;
+}
+
+.multiselect-container > li > a > label.checkbox {
+
+  padding: 12px;
+  color: rgba(0,0,0,.87);
+
+}
