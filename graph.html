@@ -12,60 +12,66 @@
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="https://davidstutz.de/bootstrap-multiselect/docs/js/bootstrap-3.3.2.min.js"></script>
     <script src="https://davidstutz.de/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-    <title>GBV phase II narrative research results visualisation</title>
+    <title>SM data visualisation</title>
 </head>
 <body>
-    <div id="chart"></div>
-
+    <div id="chart">
+            <div class='axes'>
+                    <div>0 Not at all</div>
+                    <div>100 Fully</div>
+                </div>
+                <div class="titles">
+                    
+                    <div> <span>
+                    You did not act/do something because you…
+                    </span><div><span>
+                    Feared for your safety
+                    </span><span>
+                    Believed it was not your job/place
+                    </span><span>
+                    Did not know how to help
+                    </span></div></div>
+                    
+                    
+                    <div> <span>
+                    You did something because you
+                    </span><div><span>
+                    Could rely on support of public services
+                    </span><span>
+                    Felt responsible for dealing with it
+                    </span><span>
+                    Knew what to do/how to help
+                    </span></div></div>
+                    
+                    
+                    <div> <span>
+                    You decided to act/not act the way you did because
+                    </span><div><span>
+                    You did not have a choice
+                    </span><span>
+                    To you it was the right thing to do
+                    </span><span>
+                    It was an appropriate/acceptable thing to do
+                    </span></div></div>
+                    </div>
+                    
+                    <div class="count">Total: <span id="count"></span></div>
+    </div>
     <div class="left-bar">
         <form>
-
+            <div class="title"> Color coding: </div>
+            <div>
+                 <select name="coloryze"><option>None</option></select> <ul class="col-codes"></ul>
+            </div>
+            <div class="title"> Graph type: </div>
+            <div>
+                <select name="line"><option value="Linear" selected>Linear</option><option value="Step">Steps</option><option value="Basis">Basis</option></select>
+            </div>
+            <div class="title"> Data filters: </div>
         </form>
+            <div class="title" id="clear">Clear all filters</div>
     </div>
-    <div class="titles">
-        <!-- <div><span>
-        Example
-        </span><div><span>
-        Working
-        </span><span>
-        Sleeping
-        </span><span>
-        Preparing/consuming food
-        </span></div></div> -->
-        
-        
-        <div> <span>
-        You did not act/do something because you…
-        </span><div><span>
-        Feared for your safety
-        </span><span>
-        Believed it was not your job/place
-        </span><span>
-        Did not know how to help
-        </span></div></div>
-        
-        
-        <div> <span>
-        You did something because you
-        </span><div><span>
-        Could rely on support of public services
-        </span><span>
-        Felt responsible for dealing with it
-        </span><span>
-        Knew what to do/how to help
-        </span></div></div>
-        
-        
-        <div> <span>
-        You decided to act/not act the way you did because
-        </span><div><span>
-        You did not have a choice
-        </span><span>
-        To you it was the right thing to do
-        </span><span>
-        It was an appropriate/acceptable thing to do
-        </span></div></div>
-        </div>
+    
         
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="chart.js"></script>
@@ -74,4 +80,26 @@
 
 </html>
 
-<!-- Missing N/A & Others & Q2.7&2.4&3.3&3.4-->
+<!-- 
+    Missing N/A & Others & Q2.7&2.4&3.3&3.4
+    Y dimentions
+        Fully 
+        Not At all
+
+    skipped questions
+
+    //// invert Y
+
+    make Y wikasjdn
+
+    ////narrow lines
+
+    sotrten poup text for safary and chrome
+
+    add triangular wiev
+
+    ///add counts of results
+
+    clear all filters button
+
+-->
